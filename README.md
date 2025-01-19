@@ -124,6 +124,7 @@ What we want is ONE way to access the app.
 And that _one way_ is going to be though Nginx.
 
 So it’s going to go like this:
+
 Client makes request to the server > Nginx takes the request > gives it to the 3 express app servers
 
 <img width="657" alt="Screenshot 2025-01-19 at 2 42 15 PM" src="https://github.com/user-attachments/assets/24b5c6ff-2737-435c-8fde-1fc0c7054332" />
