@@ -129,7 +129,10 @@ Clients makes request to the server > Nginx takes the request > gives it to the 
 
 <img width="657" alt="Screenshot 2025-01-19 at 2 42 15 PM" src="https://github.com/user-attachments/assets/24b5c6ff-2737-435c-8fde-1fc0c7054332" />
 
+-Check to see if nginx is installed and if not install it.
 
+-Locate the Nginx Configuration file
+This is done with the command: **nginx -V**
 
 
 
