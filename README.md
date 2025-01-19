@@ -26,23 +26,23 @@ signed TLS Certificate to ensure secure communication.
 
 
 
-- I created a **index.html** file and a folder named **images** that contains all of the images for the webpage.
+### - I created a **index.html** file and a folder named **images** that contains all of the images for the webpage.
 
 The webpage looks like this:
 <img width="1427" alt="nginx-webpage" src="https://github.com/user-attachments/assets/0e6ba98d-7be7-46a7-b520-35f450bb7256" />
 
-- THEN, I made a **server.js** file and created a backend server with express that serves the html page to the web browser on port 3000.
+### - Then, I made a **server.js** file and created a backend server with express that serves the html page to the web browser on port 3000.
 
 <img width="560" alt="Screenshot 2025-01-19 at 12 57 17 PM" src="https://github.com/user-attachments/assets/246b6a1c-1c9e-460d-b42f-86797638b47a" />
 
-- THEN, I generated a package.json file by running the command: **npm install**
+### - Then, I generated a package.json file by running the command: **npm install**
 
-- THEN, I ran the express server with the command: **node server.js**
+### - Then, I ran the express server with the command: **node server.js**
 (You know it's running when you see: "node app is listening on port 3000" in the terminal)
 
 Because the port is set to 3000, if you type: _localhost:3000_ in the web browser, you’ll be able to see the webpage.
 
-- NEXT, I created a **Dockerfile** and configured it.
+### - Next, I created a **Dockerfile** and configured it.
 
 <img width="321" alt="Screenshot 2025-01-19 at 1 18 06 PM" src="https://github.com/user-attachments/assets/b5e6a22d-5208-412f-8428-a7706902202f" />
 
@@ -61,7 +61,7 @@ Exposes port **3000** for the application.
 Runs `server.js` using **Node.js** when the container starts.
 
 
-- AFTER THAT, I created 3 instances of the express app.
+### - After that, I created 3 instances of the express app.
 
 How you create multiple instances of the app is by using docker compose which is in a yaml file (**docker-compose.yaml**)
 
@@ -82,7 +82,7 @@ Since we want to run 3 images on the same port the ports have to be different
 (3001:3000,  3002:3000,  3003:3000)
 
 
-- IN THE NEXT STEP, I passed the APP_NAME environment variable to the application.
+### - In the next step, I passed the APP_NAME environment variable to the application.
 
 To do this, I had to reconfigure the express server:
 
@@ -90,7 +90,7 @@ To do this, I had to reconfigure the express server:
 
 The server needs to have access to the environment variable so it can tell what image is which. (You can access environment variables in node.js using: **process.env**)
 
-- NEXT, I ran docker-compose to start the 3 express server apps I created with the following command: **docker-compose up --build -d**
+### - Next, I ran docker-compose to start the 3 express server apps I created with the following command: **docker-compose up --build -d**
 
 It'll show the following in the terminal:
 <img width="541" alt="Screenshot 2025-01-19 at 2 00 29 PM" src="https://github.com/user-attachments/assets/8caba0ae-3506-459d-a667-74419268cef4" />
@@ -107,10 +107,10 @@ You'll be able to see that all three of the instances are up and running 😊
 
 <img width="938" alt="Screenshot 2025-01-19 at 2 16 44 PM" src="https://github.com/user-attachments/assets/85291308-0abe-4e96-8498-cbaccd1fb693" />
 
-- THEN, I ran **control + c** in the terminal I ran _node server.js_ to kill the express server so that just the container instances are running. 
+### Then, I ran **control + c** in the terminal I ran _node server.js_ to kill the express server so that just the container instances are running. 
 (localhost:3000 will no longer work at this point)
 
-- NEXT, I configured the Nginx proxy
+### - Next, I configured the Nginx proxy
 
 At this point, there are 3 replicas of the app.
 
@@ -129,10 +129,32 @@ Clients makes request to the server > Nginx takes the request > gives it to the 
 
 <img width="657" alt="Screenshot 2025-01-19 at 2 42 15 PM" src="https://github.com/user-attachments/assets/24b5c6ff-2737-435c-8fde-1fc0c7054332" />
 
--Check to see if nginx is installed and if not install it.
+### - Check to see if nginx is installed and if not install it.
 
--Locate the Nginx Configuration file
+### - Locate the Nginx Configuration file.
+
 This is done with the command: **nginx -V**
+
+Then search for: _nginx.conf_ in the terminal. It will highlight it.
+
+example:
+<img width="886" alt="Screenshot 2025-01-19 at 3 09 45 PM" src="https://github.com/user-attachments/assets/3664891d-ace2-4bea-898d-7c93f09042e0" />
+
+The path is: **/usr/local/etc/nginx/nginx.conf**
+
+This path is needed to alter the behavior of Nginx and also to put it into our project. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
