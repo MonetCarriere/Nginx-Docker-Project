@@ -107,7 +107,7 @@ You'll be able to see that all three of the instances are up and running 😊
 
 <img width="938" alt="Screenshot 2025-01-19 at 2 16 44 PM" src="https://github.com/user-attachments/assets/85291308-0abe-4e96-8498-cbaccd1fb693" />
 
-### Then, I ran **control + c** in the terminal I ran _node server.js_ to kill the express server so that just the container instances are running. 
+### - Then, I ran **control + c** in the terminal I ran _node server.js_ to kill the express server so that just the container instances are running. 
 (localhost:3000 will no longer work at this point)
 
 ### - Next, I configured the Nginx proxy
