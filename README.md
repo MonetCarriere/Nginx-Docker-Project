@@ -119,7 +119,7 @@ Which means we have 3 ways to access the app.
 
 But we don’t want that. 
 
-What we WANT is ONE way to access the app.
+What we want is ONE way to access the app.
 
 And that _one way_ is going to be though Nginx.
 
