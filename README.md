@@ -101,7 +101,7 @@ You can confirm the apps are running by running the command: **docker ps** in a 
 At this point, if you open three seperate browsers and type:
 _localhost:3001_ in the first browser,
 _localhost:3002_ in the second browser, and
-_localhost:3003_ in the third browser
+_localhost:3003_ in the third browser...
 
 You'll be able to see that all three of the instances are up and running 😊
 
