@@ -176,9 +176,18 @@ And configured the file from scratch:
 
 <img width="555" alt="Screenshot 2025-01-19 at 3 36 35 PM" src="https://github.com/user-attachments/assets/924a609a-45ff-4468-a62f-ef9f3c8efdb0" />
 
+### - Lastly, I started Nginx with the command: nginx
+
+You can confirm Nginx is running by typing: localhost:8080
+(That's what I configured the port to be)
 
 
+AND THAT'S IT. 
 
+
+TO RESTART NGINX RUN: **nginx -s reload**
+
+TO STOP NGINX RUN: **nginx -s stop**
 
 
 
