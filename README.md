@@ -150,10 +150,31 @@ If you do a cat of the path (cat /usr/local/etc/nginx/nginx.conf) in the termina
 
 The contents of this file need to go inside of the project. In order to get it into the project, inside of the VS Code text editor, I ran: **Command + shift + p**
 
+Doing this will make a search bar appear as well as a pop up that says:
+“Shell Command: Install ‘code’ command in PATH”
+
+<img width="606" alt="Screenshot 2025-01-19 at 3 29 14 PM" src="https://github.com/user-attachments/assets/e473279e-7237-48a7-acc2-4e353d894de9" />
+
+After you select the Shell Command, go back to your terminal.
+
+Then run the command:
+code /usr/local/etc/nginx/nginx.conf
+
+That will open your VS Code and the code will now be there :)
 
 
+The Nginx.conf file comes with a lot of boiler plate code:
+
+<img width="809" alt="Screenshot 2025-01-19 at 3 33 21 PM" src="https://github.com/user-attachments/assets/342fe2af-7b42-4c2a-bc88-d93804da1f05" />
+
+I got rid of everythnig inside: 
+
+<img width="801" alt="Screenshot 2025-01-19 at 3 34 52 PM" src="https://github.com/user-attachments/assets/5260002b-4714-4392-a32c-3362e76e3687" />
+
+And configured the file from scratch:
 
 
+<img width="555" alt="Screenshot 2025-01-19 at 3 36 35 PM" src="https://github.com/user-attachments/assets/924a609a-45ff-4468-a62f-ef9f3c8efdb0" />
 
 
 
