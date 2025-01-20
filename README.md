@@ -165,6 +165,8 @@ Doing this will make a search bar appear as well as a pop up that says:
 
 <img width="606" alt="Screenshot 2025-01-19 at 3 29 14 PM" src="https://github.com/user-attachments/assets/e473279e-7237-48a7-acc2-4e353d894de9" />
 
+(What this does is make the code command available in the terminal so you can open any files and pull it into VS Code)
+
 After you select the Shell Command, go back to your terminal.
 
 Then run the command:
