@@ -234,7 +234,7 @@ TO STOP A SPECIFIC DOCKER CONTAINER RUN: **docker stop _container id_**
 
 TO STOP ALL DOCKER CONTAINERS RUN: **docker stop $(docker ps -q)**
 
-
+TO STOP ALL DOCKER COMPOSE CONTAINERS: **docker compose down**
 
 
 
