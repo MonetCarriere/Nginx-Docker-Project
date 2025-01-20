@@ -154,9 +154,7 @@ The path is: **/usr/local/etc/nginx/nginx.conf**
 
 This path is needed to alter the behavior of Nginx and also to put it into our project. 
 
-If you do a cat of the path (cat /usr/local/etc/nginx/nginx.conf) in the terminal, it will show the contents of that file:
-
-<img width="590" alt="Screenshot 2025-01-19 at 3 20 00 PM" src="https://github.com/user-attachments/assets/30cb1ada-a037-4a9b-876d-b0f36267c1e9" />
+If you do a cat of the path (cat /usr/local/etc/nginx/nginx.conf) in the terminal, it will show the contents of that file.
 
 The contents of this file need to go inside of the project. In order to get it into the project, inside of the VS Code text editor, I ran: **Command + shift + p**
 
