@@ -188,9 +188,40 @@ And configured the file from scratch:
 
 <img width="555" alt="Screenshot 2025-01-19 at 3 36 35 PM" src="https://github.com/user-attachments/assets/924a609a-45ff-4468-a62f-ef9f3c8efdb0" />
 
+In the config file, you can see that Nginx takes the incoming web requests and passes them to one of three Node.js servers, balancing the load among them.
+
+Breakdown of what's happening in the file:
+
+#### worker_processes 1;: 
+
+Nginx will use just one worker to handle requests.
+
+#### worker_connections 1024;: 
+
+That worker can handle up to 1,024 connections at the same time.
+
+#### http {} block: 
+
+This is where we set up how Nginx handles web traffic.
+
+#### upstream nodejs_cluster {}: 
+
+We are creating a group of three backend servers (Node.js servers) for Nginx to send requests to, using the one with the fewest current connections.
+
+#### server {} block: 
+Nginx listens on port 8080 for incoming requests.
+
+#### location / {}: 
+Any request to the root path (/) will be passed to one of the Node.js servers in our group.
+
+#### Headers (proxy_set_header): 
+Nginx forwards some client info to the backend servers.
+
+
+
 ### - Lastly, I started Nginx with the command: nginx
 
-You can confirm Nginx is running by typing: localhost:8080
+You can confirm Nginx is running by typing: **localhost:8080**
 (That's what I configured the port to be)
 
 
