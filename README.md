@@ -35,9 +35,11 @@ The webpage looks like this:
 
 <img width="560" alt="Screenshot 2025-01-19 at 12 57 17 PM" src="https://github.com/user-attachments/assets/246b6a1c-1c9e-460d-b42f-86797638b47a" />
 
-### - Then, I generated a package.json file by running the command: **npm install**
+### - Then, I generated a package.json file by running the command: 
+### **npm install**
 
-### - Then, I ran the express server with the command: **node server.js**
+### - Then, I ran the express server with the command: 
+### **node server.js**
 (You know it's running when you see: "node app is listening on port 3000" in the terminal)
 
 Because the port is set to 3000, if you type: _localhost:3000_ in the web browser, you’ll be able to see the webpage.
@@ -145,6 +147,7 @@ This is done with the command: **nginx -V**
 Then search for: _nginx.conf_ in the terminal. It will highlight it.
 
 example:
+
 <img width="886" alt="Screenshot 2025-01-19 at 3 09 45 PM" src="https://github.com/user-attachments/assets/3664891d-ace2-4bea-898d-7c93f09042e0" />
 
 The path is: **/usr/local/etc/nginx/nginx.conf**
