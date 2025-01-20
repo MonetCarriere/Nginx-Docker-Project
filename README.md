@@ -199,6 +199,9 @@ TO RESTART NGINX RUN: **nginx -s reload**
 
 TO STOP NGINX RUN: **nginx -s stop**
 
+TO STOP A SPECIFIC DOCKER CONTAINER RUN: **docker stop _container id_**
+
+TO STOP ALL DOCKER CONTAINERS RUN: **docker stop $(docker ps -q)**
 
 
 
