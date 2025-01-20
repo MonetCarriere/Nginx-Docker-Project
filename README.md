@@ -192,7 +192,7 @@ Breakdown of what's happening in the file:
 
 #### worker_processes 1;: 
 
-Nginx will use just one worker to handle requests.
+Nginx will use just one worker to handle requests. Worker processes is whats processing the requests.
 
 #### worker_connections 1024;: 
 
