@@ -26,7 +26,7 @@ signed TLS Certificate to ensure secure communication.
 
 
 
-### - I created a **index.html** file and a folder named **images** that contains all of the images for the webpage.
+### - I created a **index.html** file and a folder named **images** that contains all of the content for the webpage.
 
 The webpage looks like this:
 <img width="1427" alt="nginx-webpage" src="https://github.com/user-attachments/assets/0e6ba98d-7be7-46a7-b520-35f450bb7256" />
