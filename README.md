@@ -31,7 +31,7 @@ signed TLS Certificate to ensure secure communication.
 The webpage looks like this:
 <img width="1427" alt="nginx-webpage" src="https://github.com/user-attachments/assets/0e6ba98d-7be7-46a7-b520-35f450bb7256" />
 
-### - Then, I made a **server.js** file and created a backend server with express that serves the html page to the web browser on port 3000.
+### - Then, I made a backend server with express that serves the html page to the web browser on port 3000.
 
 <img width="560" alt="Screenshot 2025-01-19 at 12 57 17 PM" src="https://github.com/user-attachments/assets/246b6a1c-1c9e-460d-b42f-86797638b47a" />
 
